@@ -10,7 +10,6 @@ namespace EPAM_Cource_1.Models.VegetModels
         public float Protein { get; } = 18.7f;
         public float Fats { get; } = 1;
         public float Carbohydrates { get; } = 50f;
-
         public VegetType Type { get; } = VegetType.Carrot;
     }
 }
