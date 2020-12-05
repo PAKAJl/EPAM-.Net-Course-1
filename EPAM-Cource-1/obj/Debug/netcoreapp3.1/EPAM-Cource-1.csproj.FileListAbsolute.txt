@@ -1,0 +1,13 @@
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\bin\Debug\netcoreapp3.1\EPAM-Cource-1.exe
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\bin\Debug\netcoreapp3.1\EPAM-Cource-1.deps.json
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\bin\Debug\netcoreapp3.1\EPAM-Cource-1.runtimeconfig.json
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\bin\Debug\netcoreapp3.1\EPAM-Cource-1.runtimeconfig.dev.json
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\bin\Debug\netcoreapp3.1\EPAM-Cource-1.dll
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\bin\Debug\netcoreapp3.1\EPAM-Cource-1.pdb
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\obj\Debug\netcoreapp3.1\EPAM-Cource-1.csprojAssemblyReference.cache
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\obj\Debug\netcoreapp3.1\EPAM-Cource-1.AssemblyInfoInputs.cache
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\obj\Debug\netcoreapp3.1\EPAM-Cource-1.AssemblyInfo.cs
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\obj\Debug\netcoreapp3.1\EPAM-Cource-1.csproj.CoreCompileInputs.cache
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\obj\Debug\netcoreapp3.1\EPAM-Cource-1.dll
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\obj\Debug\netcoreapp3.1\EPAM-Cource-1.pdb
+E:\!!!Projects\EPAM-Cource-1\EPAM-Cource-1\obj\Debug\netcoreapp3.1\EPAM-Cource-1.genruntimeconfig.cache
