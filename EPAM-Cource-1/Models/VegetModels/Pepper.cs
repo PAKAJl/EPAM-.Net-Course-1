@@ -6,6 +6,7 @@ namespace EPAM_Cource_1.Models.VegetModels
 {
     class Pepper: IVegetable
     {
+        public string LogText { get; } = "Pepper";
         public int Calories { get; } = 30;
         public float Protein { get; } = 12.1f;
         public float Fats { get; } = 1;
