@@ -8,8 +8,6 @@ namespace EPAM_Cource_1.Interfaces
 {
     interface ILogger
     {
-        public void WriteText(string text);
-
-        public void WriteCollection(ICollection<ILogged> collection);
+        void Log(string text);
     }
 }

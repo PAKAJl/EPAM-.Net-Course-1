@@ -7,28 +7,20 @@ namespace EPAM_Cource_1.Models
 {
     class Salad
     {
-        public string LogText { get; } = "Salad";
+        public string Name { get; } = "UnnamedSalad";
         private ICollection<IVegetable> ingredients;
         public int Calories { get; private set; }
-
         public Salad(ICollection<IVegetable> vegetables, string name)
         {
-            LogText = name;
+            Name = name;
             ingredients = vegetables;
             CalculateCalories();
         }
-
-        public ICollection<IVegetable> GetIngedients()
+        public Salad(ICollection<IVegetable> vegetables)
         {
-            return ingredients;
-        }
-
-        public void AddIngredient(IVegetable vegetable)
-        {
-            ingredients.Add(vegetable);
+            ingredients = vegetables;
             CalculateCalories();
         }
-
         private void CalculateCalories()
         {
             int calories = 0;

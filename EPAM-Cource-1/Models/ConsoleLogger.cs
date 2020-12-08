@@ -8,15 +8,7 @@ namespace EPAM_Cource_1.Models
 {
     class ConsoleLogger : ILogger
     {
-        public void WriteCollection(ICollection<ILogged> collection)
-        {
-            foreach (var item in collection)
-            {
-                Console.WriteLine(item.LogText);
-            }
-        }
-
-        public void WriteText(string text)
+        public void Log(string text)
         {
             Console.WriteLine(text);
         }

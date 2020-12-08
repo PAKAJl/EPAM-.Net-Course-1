@@ -5,21 +5,13 @@ using System.Text;
 
 namespace EPAM_Cource_1.Models
 {
-    interface IVegetable : ILogged
+    interface IVegetable
     {
+        public string Name { get; }
         public int Calories { get;}
         public float Protein { get; }
         public float Fats { get; }
         public float Carbohydrates { get; }
         public VegetType Type { get; }
-    }
-
-    enum VegetType
-    {
-        Potato,
-        Carrot,
-        Cucumber,
-        Tomato,
-        Pepper
     }
 }
