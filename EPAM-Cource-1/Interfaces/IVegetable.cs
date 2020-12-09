@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EPAM_Cource_1.Models
 {
-    interface IVegetable
+    public interface IVegetable
     {
         public string Name { get; }
         public int Calories { get;}

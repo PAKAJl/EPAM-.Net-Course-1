@@ -5,26 +5,27 @@ using System.Text;
 
 namespace EPAM_Cource_1.Models
 {
-    class Salad
+    public class Salad
     {
-        public string Name { get; } = "UnnamedSalad";
-        private ICollection<IVegetable> ingredients;
+        public string Name { get; }
+        private ICollection<IVegetable> _ingredients;
         public int Calories { get; private set; }
-        public Salad(ICollection<IVegetable> vegetables, string name)
+        public Salad(ICollection<IVegetable> vegetables, string name = "UnnamedSalad")
         {
             Name = name;
-            ingredients = vegetables;
+            _ingredients = vegetables;
             CalculateCalories();
         }
-        public Salad(ICollection<IVegetable> vegetables)
+
+        public ICollection<IVegetable> GetIngredients()
         {
-            ingredients = vegetables;
-            CalculateCalories();
+            return _ingredients;
         }
+
         private void CalculateCalories()
         {
             int calories = 0;
-            foreach (var vegetable in ingredients)
+            foreach (var vegetable in _ingredients)
             {
                 calories += vegetable.Calories;
             }

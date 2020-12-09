@@ -1,4 +1,5 @@
-﻿using EPAM_Cource_1.Interfaces;
+﻿using EPAM_Cource_1.Classes;
+using EPAM_Cource_1.Interfaces;
 using EPAM_Cource_1.Models;
 using EPAM_Cource_1.Models.VegetModels;
 using System;
@@ -33,41 +34,33 @@ namespace EPAM_Cource_1
                 i++;
             }
         }
-        private static void LogCollection(ICollection<Salad> collection)
-        {
-            ILogger logger = new ConsoleLogger();
-            int i = 1;
-            foreach (var item in collection)
-            {
-                logger.Log($"{i}." + item.Name);
-                i++;
-            }
-        }
+
         static void Main(string[] args)
         {
             ILogger logger = new ConsoleLogger();
             Cooker cooker = new Cooker();
-            logger.Log("Повар пришел на работу!");
-            cooker.AddVegetable(BuyProducts());
-            logger.Log("Продукты куплены.");
             logger.Log("Приготорление салата...");
             List<IVegetable> ingredients = new List<IVegetable>();
-            ingredients.Add(cooker.GetVegetable(VegetType.Carrot));
-            ingredients.Add(cooker.GetVegetable(VegetType.Potato));
-            ingredients.Add(cooker.GetVegetable(VegetType.Cucumber));
+            ingredients.Add(new Carrot());
+            ingredients.Add(new Potato());
+            ingredients.Add(new Pepper());
+            ingredients.Add(new Tomato());
+            ingredients.Add(new Cucumber());
+            ingredients.Add(new Pepper());
             cooker.CreateSalad(ingredients, "Мимоза");
             logger.Log("Салат мимоза создан. Калорийность равна:");
-            logger.Log(cooker.GetSaladList().FirstOrDefault(saladItem => saladItem.Name == "Мимоза").Calories.ToString());
+            Salad currentSalad = cooker.GetSaladList().FirstOrDefault(saladItem => saladItem.Name == "Мимоза");
+            logger.Log(currentSalad.Calories.ToString());
             logger.Log("Продукты отсортированы по калорийности:");
-            LogCollection(cooker.GetSortIngredByCalories());
+            LogCollection(currentSalad.GetSortIngredByCalories());
             logger.Log("Продукты отсортированы по кол-ву белков:");
-            LogCollection(cooker.GetSortIngredByProtein());
+            LogCollection(currentSalad.GetSortIngredByProtein());
             logger.Log("Продукты отсортированы по кол-ву жиров:");
-            LogCollection(cooker.GetSortIngredByFats());
+            LogCollection(currentSalad.GetSortIngredByFats());
             logger.Log("Продукты отсортированы по кол-ву углеводов:");
-            LogCollection(cooker.GetSortIngredByCarbohydrates());
+            LogCollection(currentSalad.GetSortIngredByCarbohydrates());
             logger.Log("Овощи по в калорийном диапазоне от 100ед. до 190ед.");
-            LogCollection(cooker.GetVegetablesInCaloriesRange(100, 190));
+            LogCollection(currentSalad.GetVegetablesInCaloriesRange(100, 190));
             
         }
     }

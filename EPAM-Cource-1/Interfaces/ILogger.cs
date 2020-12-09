@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EPAM_Cource_1.Interfaces
 {
-    interface ILogger
+    public interface ILogger
     {
         void Log(string text);
     }

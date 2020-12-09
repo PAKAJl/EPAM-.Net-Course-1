@@ -1,6 +1,6 @@
 ﻿namespace EPAM_Cource_1.Models
 {
-    enum VegetType
+    public enum VegetType
     {
         Potato,
         Carrot,
